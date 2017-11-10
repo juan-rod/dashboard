@@ -1,6 +1,6 @@
-# mediascience-profile
+# Dashboard
 
-> MS site for panelist to earn points by referring friends to join, completing online questionnaires, and participating in a variety of Media Panel promotional events.
+> Dashboard site for panelist to earn points by referring friends to join, completing online questionnaires, and participating in a variety of promotional events.
 
 ## Build Setup
 
