@@ -1,0 +1,88 @@
+.banner{
+	// @include gradient;
+	@include lightBoxShadow;
+	background-color: cc(bg);
+	width: 100%;
+	height:80px;
+	&__title{
+		@extend %txt--login;
+		padding-left: 4rem;
+		padding-top: 1.5rem;
+	}
+	&__icons{
+		@include btnBoxShadow;
+		height: 35px;
+	    width: 35px;
+	    border-radius: 50%;
+	    background-color: rgba(0, 181, 173, 0.34);
+	    text-align: center;
+	    padding-top: 25%;
+	    font-size: 1em;
+	    line-height: 1;
+	    cursor: pointer;
+	}
+	&__profile{
+		padding: 0 5%;
+		height:80px;
+		max-width: 1440px;
+		margin: 0 auto;
+		&--iconsDiv{
+			position: absolute;
+			right:30px;
+			top: 20px;
+
+			&:hover{
+				top:17px;
+				transition: all 225ms cb(bounce);
+			}
+		}
+		&--img{
+			text-align: center;
+			height: 110px;
+			margin: auto 0;
+			cursor: pointer;
+			padding-top:10px;
+		}
+		.initials{
+			border: 4px solid cc(bg);
+	    	height: 85px;
+		    width: 85px;
+		    border-radius: 50%;
+		    margin: 0 auto;
+		    font-size: 2.2em;
+		    padding-top: 12%;
+		    background-color: rgba(0, 181, 173, 0.34);
+		}
+		.editPhoto--icon{
+			height: 90%;
+		    border-radius: 50%;
+		    display: block;
+		    margin: 0 auto;
+		    position: relative;
+	    	bottom: 85px;
+		    width: 85px;
+		    background: rgba(23, 23, 23, 0.18);
+			
+			i{
+				font-size: 2rem;
+		    	color: #fff;
+		    	padding-top:30%;
+			}
+		}
+		&--header{}
+		&--name{
+			@extend %txt--banner;
+			padding-top:15px;
+		}
+		&--details{
+			@extend %txt--body;
+	     	color: cc(txt, .85);
+
+	     	span{
+	     		color: cc(txt);
+				padding-left: 4px;
+	     	}
+		}
+
+	}
+}

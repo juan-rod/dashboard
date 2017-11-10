@@ -1,0 +1,111 @@
+.login {
+  position: relative;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  &__loading{
+    margin: 25%;
+  }
+
+  &__row{
+    height:100vh;
+  }
+
+  &__aside{
+    padding-top: 18rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 0;
+    overflow: hidden;
+    background-color: cc(bg, alt);
+
+    &--top{
+      @extend %txt--login;
+      color: $ms-dark-blue;
+    }
+
+    &--top .rewards{
+      color:$ms-light-blue;
+    }
+
+    &--bottom{
+      @extend %txt--rte;
+      margin-top:2rem;
+    }
+
+  }
+
+  &__body{
+    // @include circuitPattern;
+    // color:cc(bg);
+    @include gradient;
+    padding: 6% 4%;
+  }
+  &__form{
+    padding:0px 20%;
+
+    &--heading{
+      text-align: center;
+      h2{
+        @extend %txt--login;
+      }
+      p{
+        @extend %txt--body;
+        line-height: 1.5;
+      }
+
+    }
+    &--email{}
+    &--password{
+      .lock-icon{
+        position: absolute;
+          z-index: 2;
+          top: 14px;
+          right: 15px;
+      }
+      .lock-icon i{
+        font-size: 1.5em;
+          color: rgba(76, 78, 77, 0.55);
+      }
+    }
+    &--reset{
+      text-align: right;
+      position: relative;
+      top: -10px;
+      font-size: .8rem;
+    }
+    &--button{
+      background-color:$ms-dark-blue;
+      margin-bottom: 5%;
+      height:50px;
+      font-size: 1.5em;
+      line-height:1;
+      font-weight:500;
+      border-radius: 0px;
+    }
+    &--panel{
+      text-align: right;
+      span{
+        margin-left:8px;
+      }
+      .forgot-password{
+        text-align: right;
+          /*margin-bottom: 5%;*/
+        font-size: 80%;
+        font-weight: 400;
+        position: relative;
+        top: -10px;
+      }
+    }
+  }
+  &__input{
+    margin: 5% 0;
+    input{
+      height: 50px;
+      font-size: 1.5em;
+      font-weight: 400;
+      border-radius: 0px;
+    }
+  }
+
+}
